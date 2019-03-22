@@ -3,4 +3,3 @@ php:
     - '7.3'
 install: composer install
 script: phpunit --configuration phpunit.xml.dist
-script: phpunit --condfiguration phpunit.xml.dist
