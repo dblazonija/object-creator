@@ -5,7 +5,7 @@ namespace ObjectCreator\ArrayObjectCreator;
 use ObjectCreator\AbstractObjectCreator;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 
-abstract class ArrayObjectCreator extends AbstractObjectCreator
+abstract class ArrayObjectCreator extends AbstractObjectCreator implements ArrayObjectCreatorInterface
 {
     /**
      * ArrayObjectCreator constructor.
