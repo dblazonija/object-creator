@@ -1,0 +1,29 @@
+{
+    "name": "dblazonija/object-creator",
+    "description": "PHP library that helps developers create objects from other data types such as arrays, serialized strings and alike.",
+    "type": "library",
+    "require": {
+        "symfony/property-access": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ObjectCreator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Domagoj Blazonija",
+            "email": "domagoj.blazonija@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/|version|/phpunit.xsd"
+        cacheTokens="false"
+        colors="true">
+    <testsuites>
+        <testsuite name="Complete Test Suite">
+            <directory>tests/Unit/*.php</directory>
+            <file>tests/Unit/ArrayObjectCreator/ArrayObjectCreatorTest.php</file>
+            <exclude>tests/Helpers</exclude>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
