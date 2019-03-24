@@ -19,7 +19,7 @@ find it useful.
 
 Intended usage is to extend the abstracts of the library and instantiate objects by passing 
 data to your object's constructor. For example, when you receive data as a result of an API call,
-you might get it as an array or as \stdObject. Then instead of accessing that data as 
+you might get it as an array or as \stdClass. Then instead of accessing that data as 
 `$data['value']`, you could acess it as `$object->getValue()` thus mitigating possible errors
 and additional checks like `isset($data['value'])` before using it.
 
@@ -112,7 +112,7 @@ $object->getNumber(); // 23
 
 Contributing is always welcome. 
 
-If you have suggestions or problems with usage, you can open upan issue. 
+If you have suggestions or problems with usage, you can open up an issue. 
 
 If you want to help with the issues, fork the repository, make sure you have latest version
 of the code and that the current tests pass, create new branch, work on the feature or bug (and add test cases), push the code to your repository and create a PR 
