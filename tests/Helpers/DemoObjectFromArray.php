@@ -4,7 +4,7 @@ namespace Test\Helpers;
 
 use ObjectCreator\ArrayObjectCreator\ArrayObjectCreator;
 
-class DemoObject extends ArrayObjectCreator
+class DemoObjectFromArray extends ArrayObjectCreator
 {
     protected $propertyMapper = [
         'number' => 'SomeNumber',
@@ -31,9 +31,9 @@ class DemoObject extends ArrayObjectCreator
 
     /**
      * @param int $number
-     * @return DemoObject
+     * @return DemoObjectFromArray
      */
-    public function setNumber(int $number): DemoObject
+    public function setNumber(int $number): DemoObjectFromArray
     {
         $this->number = $number;
 
@@ -50,9 +50,9 @@ class DemoObject extends ArrayObjectCreator
 
     /**
      * @param string $text
-     * @return DemoObject
+     * @return DemoObjectFromArray
      */
-    public function setText(string $text): DemoObject
+    public function setText(string $text): DemoObjectFromArray
     {
         $this->text = $text;
 
